@@ -1,12 +1,12 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow 
-from PyQt5.uic import loadUi
+import sys
+from PyQt5.QtWidgets import QApplication
 from view.Calculadora import Calculadora
 
 
 if __name__ == "__main__":
     app = QApplication([])
     tela = Calculadora()
-    app.exec_()
+    sys.exit(app.exec_())
 
    
 
